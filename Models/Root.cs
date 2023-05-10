@@ -15,4 +15,10 @@ namespace Pokemon.Models
         public List<ResultsItem> Results { get; set; }
 
     }
+
+    public class ResultsItem
+    {
+        public string Name { get; set; }
+        public string Url { get; set; }
+    }
 }

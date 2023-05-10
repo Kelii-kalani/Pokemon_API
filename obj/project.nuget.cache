@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yXBF1Iq3pa3k7PMyXU8hAYlHvCGUv1hfuZrkXaZDPSsSIKIRjbhiNKzU4YhqLYjqNowDBnPDl1ROlKsHLe4ipQ==",
+  "dgSpecHash": "VRoeBtMlve5j9AzBYZAxm6djliqJGY96qRqUrKuZvBvDM4ppWvWWSbzmbBghMN7JimBpuvXnHa97CTIlkZCBdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\kelii\\source\\repos_2\\Pokemon\\Pokemon.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kelii\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\kelii\\.nuget\\packages\\documentformat.openxml\\2.20.0\\documentformat.openxml.2.20.0.nupkg.sha512",
+    "C:\\Users\\kelii\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\kelii\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

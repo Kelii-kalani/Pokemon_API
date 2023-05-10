@@ -4,7 +4,7 @@ using Pokemon.Models;
 
 namespace Pokemon.Controllers
 {
-    public class PoemonController : Controller
+    public class PokemonController : Controller
     {
         public IActionResult Index([FromQuery(Name = "resource_url")] string resourceUrl = "https://pokeapi.co/api/v2/pokemon/")
         {

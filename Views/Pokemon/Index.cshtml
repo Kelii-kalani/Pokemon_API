@@ -1,0 +1,26 @@
+﻿@using Pokemon.Models
+@model Root
+
+<body>
+    <header>
+        <div class="pokemonCollection">
+            @foreach (var pokemon in Model.Results)
+            {
+                <ul style="list-style:none" class="card">
+                    <li>Name: @pokemon.Name</li>
+                    <li>Url: @pokemon.Url</li>
+                </ul>
+            }
+        </div>
+        <div>
+            @if (@Model.Previous != null)
+            {
+                <a asp-action="Index" asp-route-resource_url="@Model.Previous" class="btn btn-lg btn-success">Previous Page</a>
+            }
+            @if (Model.Next != null)
+            {
+                <a asp-action="Index" asp-route-resource_url="@Model.Next" class="btn btn-lg btn-success">Next Page</a>
+            }
+        </div>
+    </header>
+</body>

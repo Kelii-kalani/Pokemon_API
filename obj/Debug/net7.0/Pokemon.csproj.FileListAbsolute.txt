@@ -31,3 +31,5 @@ C:\Users\kelii\source\repos_2\Pokemon\obj\Debug\net7.0\refint\Pokemon.dll
 C:\Users\kelii\source\repos_2\Pokemon\obj\Debug\net7.0\Pokemon.pdb
 C:\Users\kelii\source\repos_2\Pokemon\obj\Debug\net7.0\Pokemon.genruntimeconfig.cache
 C:\Users\kelii\source\repos_2\Pokemon\obj\Debug\net7.0\ref\Pokemon.dll
+C:\Users\kelii\source\repos_2\Pokemon\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Users\kelii\source\repos_2\Pokemon\bin\Debug\net7.0\System.IO.Packaging.dll

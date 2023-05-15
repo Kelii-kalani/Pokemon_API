@@ -1,0 +1,52 @@
+﻿@using Pokemon.Models
+@model Root
+
+<body>
+    <header>
+        <div class="pokemon">
+            <ul style="list-style:none" class="card">
+                <li>Id: @Model.Id</li>
+                <li>Name: @Model.Name</li>
+                <li>Exp: @Model.Base_experience</li>
+                <li>Height: @Model.Height</li>
+                <li>Default?: @Model.Is_default</li>
+                <li>Order: @Model.Order</li>
+                <li>Weight: @Model.Weight</li>
+                @foreach (var items in Model.Abilities)
+                {
+                    <li>Hidden?: @items.Is_hidden</li>
+                    <li>Slot: @items.Slot</li>
+                    <li>Ability: @items.Ability.Name</li>
+                }
+                @foreach (var item in Model.Forms)
+                {
+                    <li>Forms: @item.Name</li>
+                }
+                @foreach (var ind in Model.Game_indices)
+                {
+                    <li>Game Index: @ind.Game_index</li>
+                    <li>Version: @ind.Version.Name</li>
+                }
+                @foreach (var items in Model.Held_items)
+                {
+                    <li><b>Item:</b> @items.Item.Name</li>
+                    @foreach (var item in items.Version_details)
+                    {
+                        <li>Rarity: @item.Rarity</li>
+                        <li>Version: @item.Version.Name</li>
+                    }
+                }
+                @foreach (var moves in Model.Moves)
+                {
+                    <li><b>Move Learned:</b> @moves.Move.Name</li>
+                    @foreach (var move in moves.Version_group_details)
+                    {
+                        <li>Level Learned: @move.Level_learned_at</li>
+                        <li>Version Group: @move.Version_group.Name</li>
+                        <li>Move Learnd Method: @move.Move_learn_method.Name</li>
+                    }
+                }
+            </ul>
+        </div>
+    </header>
+</body>

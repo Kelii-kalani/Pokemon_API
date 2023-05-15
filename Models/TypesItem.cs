@@ -2,7 +2,7 @@
 {
     public class TypesItem
     {
-        public int slot { get; set; }
+        public int Slot { get; set; }
         public Type? Type { get; set; }
     }
 }

@@ -28,5 +28,6 @@ namespace Pokemon.Models
         public List<StatsItem>? Stats { get; set; }
         public List<TypesItem>? Types { get; set; }
         public Sprites? Sprites { get; set; }
+        public List<Game_indicesItem>? Game_indices { get; set; }
     }
 }

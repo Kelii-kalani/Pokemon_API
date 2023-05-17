@@ -3,36 +3,43 @@
 
 <body>
     <header>
-        <div class="pokemon">
-            <img src="@Model.Sprites.Front_default" />
-            <ul style="list-style:none" class="card">
-                <li><b>Id:</b> @Model.Id</li>
-                <li><b>Name:</b> @Model.Name</li>
-                @foreach (var type in Model.Types)
-                {
-                    <li><b>Types:</b> @type.Type.Name</li>
-                }
-                <li><b>Height:</b> @Model.Height</li>
-                <li><b>Weight:</b> @Model.Weight</li>
-                <li><b>Order:</b> @Model.Order</li>
-                @foreach (var stat in Model.Stats)
-                {
-                    <li><b>Base Stats:</b> @stat.Base_stat</li>
-                    <li>Stat: @stat.Stat.Name</li>
-                }
-                @foreach (var ability in Model.Abilities)
-                {
-                    <li><b>Ability:</b> @ability.Ability.Name</li>
-                }
-                @foreach (var items in Model.Held_items)
-                {
-                    <li><b>Item:</b> @items.Item.Name</li>
-                }
-                @foreach (var moves in Model.Moves)
-                {
-                    <li><b>Possible Move Learned:</b> @moves.Move.Name</li>
-                }
-            </ul>
+        <div class="pokemonpics">
+            <span>
+                <img src="@Model.Sprites.Other.Home.Front_default"/>
+                <img src="@Model.Sprites.Other.Dream_world.Front_default"/>
+                <img src="@Model.Sprites.Front_default"/>
+            </span>
         </div>
     </header>
+    <section>
+        <div class="stats">
+            <h6><b>Id</b></h6>
+                <p>@Model.Id</p>
+            <h6><b>Name</b></h6>
+                <p>@Model.Name</p>
+            <h6><b>Type</b></h6>
+                @foreach (var type in Model.Types)
+                {
+                    <p> @type.Type.Name</p>
+                }
+            <h6><b>Height</b></h6>
+                <p>@Model.Height</p>
+            <h6><b>Weight</b></h6>
+                <p>@Model.Weight</p>
+            <h6><b>Abilities</b></h6>
+                @foreach (var ability in Model.Abilities)
+                {
+                    <p>@ability.Ability.Name</p>
+                }
+        </div>
+        <article>
+            <div class="movelist">
+                <h6><b>Possible Move Learned</b></h6>
+                @foreach (var moves in Model.Moves)
+                {
+                    <span>/@moves.Move.Name</span>
+                }
+            </div>
+</article>
+    </section>
 </body>

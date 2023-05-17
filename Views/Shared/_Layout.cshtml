@@ -17,9 +17,9 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <form id="form" role="search" asp-controller="Pokemon" asp-action="CallNameOfPokemon">
+                <form id="form" role="search" asp-controller="Pokemon" asp-action="CallNameOfPokemon" autocomplete="off">
                     <input type="search" id="query" name="name"
-                        placeholder="search..."/>
+                        placeholder="search Name or ID"/>
                         <button>Search</button>
                 </form>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">

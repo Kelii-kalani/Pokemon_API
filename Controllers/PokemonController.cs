@@ -33,13 +33,14 @@ namespace Pokemon.Controllers
                 var url = resourceUrl;
                 var response = client.GetStringAsync(url).Result;
                 var resultsItem = JsonConvert.DeserializeObject<Root>(response);
-
+                
                 return View(resultsItem);
             }
             else
             {
                 return View("Invalid Page");
             }
+            
         }
     }
 }

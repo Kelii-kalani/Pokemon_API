@@ -1,45 +1,84 @@
-﻿@using Pokemon.Models
+﻿@using System.Linq
+@using Pokemon.Models
 @model Root
 
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 <body>
     <header>
-        <div class="pokemonpics">
-            <span>
-                <img src="@Model.Sprites.Other.Home.Front_default"/>
-                <img src="@Model.Sprites.Other.Dream_world.Front_default"/>
-                <img src="@Model.Sprites.Front_default"/>
-            </span>
+        <div id="demo" class="pokemonpics slide" data-ride="carousel">
+            <!--Indicators-->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!--Slideshow-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="@Model.Sprites.Front_default"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="@Model.Sprites.Other.Dream_world.Front_default"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="@Model.Sprites.Other.Home.Front_default"/>
+                </div>
+            </div>
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
     </header>
-    <section>
-        <div class="stats">
-            <h6><b>Id</b></h6>
-                <p>@Model.Id</p>
-            <h6><b>Name</b></h6>
-                <p>@Model.Name</p>
-            <h6><b>Type</b></h6>
-                @foreach (var type in Model.Types)
-                {
-                    <p> @type.Type.Name</p>
-                }
-            <h6><b>Height</b></h6>
-                <p>@Model.Height</p>
-            <h6><b>Weight</b></h6>
-                <p>@Model.Weight</p>
-            <h6><b>Abilities</b></h6>
-                @foreach (var ability in Model.Abilities)
-                {
-                    <p>@ability.Ability.Name</p>
-                }
-        </div>
-        <article>
-            <div class="movelist">
-                <h6><b>Possible Move Learned</b></h6>
-                @foreach (var moves in Model.Moves)
-                {
-                    <span>/@moves.Move.Name</span>
-                }
+    <div>
+        <section>
+            <div class="stats">
+                <h6><b>Id</b></h6>
+                    <p>@Model.Id</p>
+                <h6><b>Name</b></h6>
+                    <p>@Model.Name</p>
+                <h6><b>Type</b></h6>
+                    @foreach (var type in Model.Types)
+                    {
+                        <p> @type.Type.Name</p>
+                    }
+                <h6><b>Height</b></h6>
+                    <p>@Model.Height</p>
+                <h6><b>Weight</b></h6>
+                    <p>@Model.Weight</p>
+                <h6><b>Abilities</b></h6>
+                    @foreach (var ability in Model.Abilities)
+                    {
+                        <p>@ability.Ability.Name</p>
+                    }
             </div>
-</article>
-    </section>
+            <article>
+                <div class="movelist">
+                    <h6><b>Possible Moves To Learned</b></h6>
+                    @foreach (var moves in Model.Moves)
+                    {
+                        <span>/@moves.Move.Name.</span>
+                    }
+                </div>
+            </article>
+        </section>
+    </div>
 </body>
+@section footer{
+    <div>
+
+    </div>
+}
+</html>

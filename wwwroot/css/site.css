@@ -17,20 +17,17 @@ html {
   min-height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
 body {
-  margin-bottom: auto;
+  position: static;
+  background-color: red;
 }
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse
-}
-
-.pokemoncollection {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
 }
 
 .card{
@@ -39,12 +36,48 @@ table, th, td {
     border-color:black;
 }
 
-.carousel-inner img {
-    position:relative;
-    width:auto;
-    height:auto;
+.footer {
+    flex: 0 0 50px;
+    margin-top: auto;
+    background-color:black;
+    color: white;
 }
 
-.footer {
-    position:static;
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
+.pokemonPics {
+    float: left;
+    padding: 60px;
+    width: 30%;
+    padding: 20px;
+    list-style-type: none;
+}
+
+h6, p, span {
+    padding: 0;
+}
+
+.pokemon {
+    width: 100%;
+    position: center;
+    text-align: center;
+    font-size: 35px;
+    font-family:Elephant;
+    font-weight: bold;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.callName {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }

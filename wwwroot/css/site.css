@@ -30,10 +30,18 @@ table, th, td {
     border-collapse: collapse
 }
 
+.pokemoncollection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 10px;
+}
+
 .card{
-    background-color:red;
-    border-style:solid;
-    border-color:black;
+    background-color:white;
+    border: 1px solid;
+    border-color:red;
+    text-align: center;
 }
 
 .footer {
@@ -80,4 +88,36 @@ section::after {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.shared {
+    background-image: url('images/pngimg.com - pokemon_png98.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom center;
+}
+
+.navbar-nav {
+    background-color: black;
+    color: white;
+}
+
+li .nav-item {
+    float: left;
+}
+
+.nav-link {
+    display: block;
+    color: royalblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+.nav-link:hover {
+    background-color:red;
+}
+
+form #form {
+    float: right;
 }

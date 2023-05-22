@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Pokemon.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kelii\\source\\repos_2\\Pokemon\\wwwroot\\css\\Images\\pngimg.com - pokemon_PNG98.png",
+      "PackagePath": "staticwebassets\\css\\Images\\pngimg.com - pokemon_PNG98.png"
+    },
+    {
       "Id": "C:\\Users\\kelii\\source\\repos_2\\Pokemon\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

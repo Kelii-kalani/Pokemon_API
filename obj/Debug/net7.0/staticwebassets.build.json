@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UzNReCOFQmXGNJZNjO7jAUHy7yJBvXaa6yhtqa8Fxc8=",
+  "Hash": "pOfcpXxfFsHzeaN2v89N3IGke3/mqU5/6YpIIZOQmFc=",
   "Source": "Pokemon",
   "BasePath": "_content/Pokemon",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kelii\\source\\repos_2\\Pokemon\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Pokemon.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\kelii\\source\\repos_2\\Pokemon\\wwwroot\\css\\Images\\pngimg.com - pokemon_PNG98.png",
+      "SourceId": "Pokemon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kelii\\source\\repos_2\\Pokemon\\wwwroot\\",
+      "BasePath": "_content/Pokemon",
+      "RelativePath": "css/Images/pngimg.com - pokemon_PNG98.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\pngimg.com - pokemon_PNG98.png"
     },
     {
       "Identity": "C:\\Users\\kelii\\source\\repos_2\\Pokemon\\wwwroot\\css\\site.css",
